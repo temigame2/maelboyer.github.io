@@ -96,3 +96,55 @@ footer {
     background: #333;
     color: white;
 }
+
+/* Section du carousel */
+.carousel {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 2em auto;
+    max-width: 800px;
+}
+
+.carousel-track-container {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    text-align: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-slide h3 {
+    color: #3498db;
+}
+
+.carousel-btn {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+    background-color: #2874a6;
+}
+
+.carousel-btn:disabled {
+    background-color: #ccc;
+    cursor: default;
+}
